@@ -1,0 +1,23 @@
+<div class="container">
+  <!-- Example row of columns -->
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="row">
+      {{#each model as |committee|}}
+        <div class="col-md-4">
+          <h3>{{committee.name}}</h3>
+          <br>
+            <li>Chamber: {{committee.chamber}}</li>
+            <li>Phone: {{committee.phone}}</li>
+        </div>
+      {{/each}}
+  </div>
+
+  <hr>
+
+  <footer>
+    <p>© 2016 Company, Inc.</p>
+  </footer>
+</div> <!-- /container -->

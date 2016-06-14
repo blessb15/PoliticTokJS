@@ -1,0 +1,26 @@
+<div class="container">
+  <!-- Example row of columns -->
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="row">
+      {{#each model as |legislator|}}
+        <div class="col-md-4">
+          {{#link-to "politician" legislator.bioguide_id}}<h3>{{legislator.name}}{{legislator.last_name}}</h3>{{/link-to}}
+          <br>
+            <li>Contact: <a href={{legislator.contact_form}}>{{legislator.contact_form}}</a></li>
+            <li>{{legislator.birthday}}</li>
+            <li>{{legislator.phone}}</li>
+            <li>{{legislator.state_name}}</li>
+            <li>{{legislator.website}}</li>
+        </div>
+      {{/each}}
+  </div>
+
+  <hr>
+
+  <footer>
+    <p>© 2016 Company, Inc.</p>
+  </footer>
+</div> <!-- /container -->
